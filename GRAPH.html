@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to your Jupyter Book &#8212; My sample book</title>
+    <title>GRAPH &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'GRAPH';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="Himpunan.html" />
+    <link rel="next" title="DERETAN DAN REKURSI" href="DERETAN%20DAN%20REKURSI.html" />
+    <link rel="prev" title="Aljabar Boolean dan gerbang logika" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +126,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +144,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,20 +175,20 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to your Jupyter Book
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html">Aljabar Boolean dan gerbang logika</a></li>
 
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="GRAPH.html">GRAPH</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">GRAPH</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DERETAN%20DAN%20REKURSI.html">DERETAN DAN REKURSI</a></li>
 </ul>
 
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FGRAPH.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -292,7 +291,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/GRAPH.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -363,7 +362,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -374,11 +375,25 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to your Jupyter Book</h1>
+    <h1>GRAPH</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweeness-centrality">Betweeness centrality</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -388,25 +403,63 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Link to this heading">#</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a> for more information.</p>
-<p>Check out the content pages bundled with this sample book to see more.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html">Aljabar Boolean dan gerbang logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html#operator-biner">Operator Biner:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html#operator-uner">Operator Uner:</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html#gerbang-logika">Gerbang logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar%20Boolean%20dan%20gerbang%20logika.html#boolean-algebra">boolean algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="GRAPH.html">GRAPH</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DERETAN%20DAN%20REKURSI.html">DERETAN DAN REKURSI</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="graph">
+<h1>GRAPH<a class="headerlink" href="#graph" title="Link to this heading">#</a></h1>
+<p>graph adalah kumpulan note yang saling berhubungan.</p>
+<p>Contoh graph seperti jaringan komputer yang saling terhubung, orang orang dalam sosial media yang saling berhubungan.</p>
+<p>contoh graph yang berbobot yaitu jarak antar kota, seperti gresik ke surabaya 10 km,surabaya ke madura 20km,gresik ke madura 35km.bobotmenunjukkan jarak jalan, yang dimana akan menghasilkan analisis jarak lintasan terpendek.</p>
+<section id="contoh">
+<h2>contoh<a class="headerlink" href="#contoh" title="Link to this heading">#</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/Hy-mEAem1e.png" /></p>
+<p>anasila node terpenting dalam graph tersebut :</p>
+</section>
+<section id="social-network">
+<h2>Social network<a class="headerlink" href="#social-network" title="Link to this heading">#</a></h2>
+<p>sebuah jaringan yang berhubungan atau interaksi antara entitas, seperti : individu atau kelompok.</p>
+<p>Centrality adalah penentuan aktor menggunakan ukuran pada Social Network Centrality dalam teori graf dan social network.</p>
+<p>terbagi menjadi 4 yaitu :</p>
+<ul class="simple">
+<li><p>degree centrality</p></li>
+<li><p>clossness centrality</p></li>
+<li><p>betweness centrality</p></li>
+<li><p>eigenvector centrality</p></li>
 </ul>
-</div>
+<section id="degree-centrality">
+<h3>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h3>
+<p>adalah jumlah edge yang terkoneksi pada satu note yang mewakili interaksi. atau mengukur jumlah hubungan yang di miliki oleh suatu note.</p>
+<p>rumusnya :
+<span class="math notranslate nohighlight">\(C'D (vi) = di/(n-1)\)</span></p>
+<p>normalisasinya = untuk node 1, degree centrality adalah 3/(9-1)=3/8</p>
+</section>
+<section id="closeness-centrality">
+<h3>Closeness centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h3>
+<p>nilai kedekatan antara satu node dengan note lainnya dalam suatu jaringan dengan menghitung rata rata dari jarak relasi node node tersebut.</p>
+<p><span class="math notranslate nohighlight">\(C_C(v) = \frac{1}{\sum_{u \neq v} d(v, u)}\)</span></p>
+<p><span class="math notranslate nohighlight">\(cc3 = 9-1/1+1+1+2+2+3+3+4 = 8/17 =0.47\)</span></p>
+<p>9 dari jumlah semua note</p>
+</section>
+<section id="betweeness-centrality">
+<h3>Betweeness centrality<a class="headerlink" href="#betweeness-centrality" title="Link to this heading">#</a></h3>
+<p>Menghitung jumlah lintasan terpendek yang melewati suatu node.
+Node dengan  betweenness  tinggi  adalah  penting dalam komunikasi dan penyebaran informasi.</p>
+<p>contoh :
+3
+1 -&gt; 4 -&gt; 5 -&gt; 7 -&gt; 9
+2 ——&gt; 6 -&gt; 8
+misal, berapa banyak lintasan terpendek  untuk menuju note 5 yaitu ada 2,untuk mengetahuinya yaitu dengan cara note 1 melewati note 1,3,5 dan note 1,3,4,5</p>
+<p>rumusnya :
+<span class="math notranslate nohighlight">\(C_B(v)=\sum_{s\neq v\neq t}\frac{\sigma_{st}(v)}{\sigma_{st}}\)</span></p>
+<p>(st) Jumlah lintasan terpendek antara  s dan t
+st(vi) Jumlah lintasan terpendek antara s dan t yang melewati vi</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/B1PQURgXJl.png" /></p>
+<p>Normalisasi nya :
+<span class="math notranslate nohighlight">\(C'B(i)=C'Bi/(n-1)(n-2)/2\)</span>
+<span class="math notranslate nohighlight">\(C'B(i)=15/(9-1)(9-2)/2\)</span>
+<span class="math notranslate nohighlight">\(C'B(i)=15/(8)(7)/2\)</span>
+<span class="math notranslate nohighlight">\(C'B(i)=15/28\)</span>
+<span class="math notranslate nohighlight">\(C'B(i)=0,5357\)</span></p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -439,12 +492,21 @@ It does not go in-depth into any particular topic - check out <a class="referenc
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Aljabar%20Boolean%20dan%20gerbang%20logika.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aljabar Boolean dan gerbang logika</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="Himpunan.html"
+       href="DERETAN%20DAN%20REKURSI.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">DERETAN DAN REKURSI</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -454,6 +516,27 @@ It does not go in-depth into any particular topic - check out <a class="referenc
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh">contoh</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network">Social network</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweeness-centrality">Betweeness centrality</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
